@@ -199,4 +199,20 @@
 // const newNumbers = [...numbers, 4, 5];
 // console.log(newNumbers)
 
-let 
+// let ditepati = true
+
+// const janji =new Promise((yes,no)=>{
+//     if(ditepati){
+//         console.log("janji ditepati")
+//     }
+//     else{
+//         console.log("tidak ditepati")
+//     }
+// })
+// console.log(janji)
+
+fetch('https://miot-dhior-default-rtdb.asia-southeast1.firebasedatabase.app/monitor.json')
+  .then(response => response.json())
+  .then(data => console.log(data.data))
+  .catch(error => console.error('Error:', error));
+
